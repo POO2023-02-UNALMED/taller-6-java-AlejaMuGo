@@ -1,6 +1,5 @@
 package vehiculos;
 import java.util.ArrayList;
-from Pais import Pais;
 public class Fabricante{
     public static ArrayList<Fabricante> fabricas = new ArrayList<>();
     public String nombre;
@@ -22,19 +21,19 @@ public class Fabricante{
     public void setPais(Pais pais){
         this.pais = pais;
     }
-    public static Fabricante fabricaMayorVentas(){
-        Pais fabrica_max=null;
+    public static String fabricaMayorVentas(){
+        String fabrica_max=null;
         int contador_max=0;
         for (int i = 0; i < fabricas.size(); i++){
             int contador=0;
             for (int j = 0; j < fabricas.size(); j++){
-                if (fabricas.get(j) == fabricas.get(i)){
+                if (fabricas.get(j).getNombre() == fabricas.get(i).getNombre()){
                     contador++;
                 }
             }
         if (contador_max < contador){
             contador_max = contador;
-            fabrica_max = fabricas.get(i);
+            fabrica_max = fabricas.get(i).getNombre();
         }
         }
         return fabrica_max;

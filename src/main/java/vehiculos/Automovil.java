@@ -16,5 +16,5 @@ public class Automovil extends Vehiculo{
     }
     public static int cantidadAutomoviles(){
         return list.size();
-
+    }
 }

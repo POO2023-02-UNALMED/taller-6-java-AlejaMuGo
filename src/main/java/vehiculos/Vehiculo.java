@@ -1,5 +1,4 @@
 package vehiculos;
-from Fabricante import Fabricante;
 public class Vehiculo{
     protected String placa;
     protected int puertas;
@@ -21,7 +20,7 @@ public class Vehiculo{
         this.peso=peso;
         this.traccion=traccion;
         this.fabricante = fabricante;
-        Fabricante.fabricas.add(this.fabricante.getNombre());
+        Fabricante.fabricas.add(this.fabricante);
 
     }
     public String getNombre(){
