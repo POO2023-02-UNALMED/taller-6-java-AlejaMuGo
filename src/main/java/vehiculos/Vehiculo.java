@@ -65,10 +65,10 @@ public class Vehiculo{
     public void setTraccion(String traccion){
         this.traccion = traccion;
     }
-    public void setCantidadVehiculos(int CantidadVehiculos){
+    public static void setCantidadVehiculos(int CantidadVehiculos){
         Vehiculo.CantidadVehiculos= CantidadVehiculos;
     }
-    public int getCantidadVehiculos(){
+    public static int getCantidadVehiculos(){
         return Vehiculo.CantidadVehiculos;
     }
     public static String vehiculosPorTipo(){
