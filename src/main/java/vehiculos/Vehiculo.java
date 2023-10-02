@@ -65,7 +65,13 @@ public class Vehiculo{
     public void setTraccion(String traccion){
         this.traccion = traccion;
     }
-    public static String vehiculosPorTipo{
+    public void setCantidadVehiculos(int CantidadVehiculos){
+        Vehiculo.CantidadVehiculos= CantidadVehiculos;
+    }
+    public int getCantidadVehiculos(){
+        return Vehiculo.CantidadVehiculos;
+    }
+    public static String vehiculosPorTipo(){
         return "Automoviles: "+Automovil.cantidadAutomoviles()+"\nCamionetas: "+Camioneta.cantidadCamionetas()+"\nCamiones: "+Camion.cantidadCamiones();
     }
 }
