@@ -21,19 +21,19 @@ public class Fabricante{
     public void setPais(Pais pais){
         this.pais = pais;
     }
-    public static String fabricaMayorVentas(){
-        String fabrica_max=null;
+    public static Fabricante fabricaMayorVentas(){
+        Fabricante fabrica_max=null;
         int contador_max=0;
         for (int i = 0; i < fabricas.size(); i++){
             int contador=0;
             for (int j = 0; j < fabricas.size(); j++){
-                if (fabricas.get(j).getNombre() == fabricas.get(i).getNombre()){
+                if (fabricas.get(j) == fabricas.get(i)){
                     contador++;
                 }
             }
         if (contador_max < contador){
             contador_max = contador;
-            fabrica_max = fabricas.get(i).getNombre();
+            fabrica_max = fabricas.get(i);
         }
         }
         return fabrica_max;
