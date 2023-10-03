@@ -27,7 +27,7 @@ public class Fabricante{
         for (int i = 0; i < fabricas.size(); i++){
             int contador=0;
             for (int j = 0; j < fabricas.size(); j++){
-                if (fabricas.get(j) == fabricas.get(i)){
+                if (fabricas.get(i) == fabricas.get(j)){
                     contador++;
                 }
             }
